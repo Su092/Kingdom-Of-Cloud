@@ -33,5 +33,6 @@
 
 - 本机开工程请用 62f3c1；Unity 启动若改写 `mcp.json` 为 8080，以 Bootstrap 写回的 8765 为准
 - `Cursor Work Space/logs/`、`vendor/` 不进仓库
+- **`.gitignore` 只能用 `/[Bb]uild/`（根目录）**；勿用全局 `[Bb]uild/`，否则会忽略 MCP 包 `Editor/Tools/Build/` → CS0234（见 `2026-09-30-fix-mcp-build-gitignore.md`）
 - 概念未决：肉鸽？元素矩阵交互；知识锁与锁合粒子/深潜分层的系统设计尚未展开
 - 渲染下一阶段：压力雾 / 体积云 / 锁合材质（底座之上）
