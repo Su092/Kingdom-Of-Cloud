@@ -1,0 +1,44 @@
+---
+description: 游戏项目常见硬约束，避免架构与资源上的重大问题
+alwaysApply: true
+---
+
+# 游戏项目约束
+
+## 目录与归属
+
+- 运行时脚本 / 资源 / 场景 / 预制体 → `Assets/_Game/`
+- 过程文件、记忆、说明 → `Cursor Work Space/`
+- 不要在 `Assets/` 外放运行时依赖；不要把临时稿塞进 `Assets/`
+- 根目录自建文件夹（如工作空间）不参与打包；需要进包的内容放 `Assets` / `StreamingAssets` / Addressables
+
+## 编辑器与平台
+
+- 本工程编辑器固定 **Unity 2022.3.62f3c1**；MCP 只连该版本
+- 不擅自升级 Unity / URP / 输入系统大版本；需升级先写记忆并征得同意
+- 输入：当前为旧 Input Manager；未要求时不整包迁移到新 Input System
+
+## 场景与预制体
+
+- 搭建与挂接优先 Unity MCP；失败再给逐步手动步骤
+- 未要求时不写 `[MenuItem]` / EditorWindow 菜单工具代替搭建
+- 可复用物体做 Prefab；场景里少堆重复手工实例
+- 新场景至少有 Camera + Directional Light；Player 使用内置 Tag `Player`
+
+## 程序集与依赖
+
+- 运行时脚本不要依赖 `UnityEditor`
+- Editor 脚本放 `Assets/_Game/Editor/`（或 Editor 文件夹）
+- 不引入与当前需求无关的重型第三方包
+
+## 资源与性能底线
+
+- 不把大体积源文件（PSD/高模/未压缩视频）无必要地放进 `Assets`
+- 避免在 `Update` 里 `Find` / `GetComponent` / 每帧 `new` 大对象
+- 不提交 `Library/`、`Temp/`、`Logs/`、`UserSettings/`
+---
+
+## 协作
+
+- 跨终端约定与进度写入 `Cursor Work Space/memory/`
+- 控制说明放 `Cursor Work Space/control/`

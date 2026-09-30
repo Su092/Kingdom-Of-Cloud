@@ -1,0 +1,12 @@
+---
+description: 场景和预制体必须走 Unity MCP；做不到再给手动步骤；未经要求不写菜单工具
+alwaysApply: true
+---
+
+# Unity 场景 / 预制体
+
+- 本工程编辑器固定为 **Unity 2022.3.62f3c1**（`D:\Unity\2022.3.62f3c1`）；MCP 也只连这个版本，不用团结引擎。
+- 场景搭建、预制体、Hierarchy、组件挂接：先用 Unity MCP 在编辑器里直接做。
+- MCP 不可用或失败：给出逐步手动操作（菜单路径、物体名、Inspector 字段、保存路径），不要含糊带过。
+- 用户没要求时，不要写 `[MenuItem]`、EditorWindow、菜单栏一键工具来完成上述工作。
+- 过程文件放 `Cursor Work Space/`；运行时代码和资源放 `Assets/_Game/`。

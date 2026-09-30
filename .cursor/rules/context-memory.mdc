@@ -1,0 +1,24 @@
+---
+description: 整理上下文时在工作空间写记忆文件，便于跨终端协作
+alwaysApply: true
+---
+
+# 上下文记忆
+
+在以下时机，于 `Cursor Work Space/memory/` 生成或更新记忆文件（不要只写在对话里）：
+
+- 用户要求整理 / 总结 / 同步上下文
+- 完成阶段性里程碑（MCP 接通、基础控制层、大改目录）
+- 跨会话必须记住的约定、坑、待办
+
+## 文件约定
+
+- 路径：`Cursor Work Space/memory/YYYY-MM-DD-简短主题.md`
+- 必要时更新 `Cursor Work Space/memory/CURRENT.md` 作为最新快照
+- 内容用要点：已定约定、当前状态、关键路径、未决问题、下一步
+- 不写密钥、Token、本机无关隐私路径以外的敏感信息；本机编辑器路径可写（协作需要）
+
+## 与控制文件关系
+
+- 长期规范 → `.cursor/rules/` 与 `Cursor Work Space/control/`
+- 阶段性事实与进度 → `Cursor Work Space/memory/`

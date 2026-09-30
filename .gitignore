@@ -62,3 +62,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Cursor workspace: keep docs/memory, ignore bulky local artifacts
+Cursor Work Space/logs/
+Cursor Work Space/vendor/
