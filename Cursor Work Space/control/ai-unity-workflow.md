@@ -4,8 +4,8 @@
 
 ## 编辑器
 
-- 只用 **Unity 2022.3.62f3c1**（`D:\Unity\2022.3.62f3c1\Editor\Unity.exe`）
-- MCP 桥只连该编辑器；勿用团结引擎打开本工程
+- 只用 **Unity 6000.6.5f1**（`F:\Unity Hub\Unity\6000.6.5f1\Editor\Unity.exe`）
+- MCP 桥只连该编辑器；勿用 2022 LTS / 团结引擎打开本工程
 
 ## 记忆
 

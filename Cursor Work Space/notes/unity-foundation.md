@@ -1,7 +1,7 @@
 # Unity 基础控制层 — 过程记录
 
-日期：2026-09-30  
-Unity：2022.3.62f3c1（唯一编辑器；MCP 也只连此版本）  
+日期：2026-09-30（2026-10-23 已迁至 Unity 6000.6.5f1，见 memory）  
+Unity：**6000.6.5f1**（唯一编辑器；MCP 也只连此版本）  
 输入：旧 Input Manager（`activeInputHandler: 0`）
 
 ## 约定

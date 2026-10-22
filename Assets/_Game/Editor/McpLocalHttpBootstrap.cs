@@ -8,7 +8,7 @@ using UnityEngine;
 namespace KingdomOfCloud.Editor
 {
     /// <summary>
-    /// 固定本工程使用 Unity 2022.3.62f3c1 + MCP HTTP 8765。无菜单栏工具。
+    /// 固定本工程使用 Unity 6000.6.5f1 + MCP HTTP 8765。无菜单栏工具。
     /// </summary>
     [InitializeOnLoad]
     internal static class McpLocalHttpBootstrap
@@ -38,7 +38,7 @@ namespace KingdomOfCloud.Editor
                     MCPServiceLocator.Server.StartLocalHttpServer(quiet: true);
 
                 await MCPServiceLocator.Bridge.StartAsync();
-                Debug.Log("[KingdomOfCloud] MCP bridge connected via HTTP 8765 (Unity 2022.3.62f3c1).");
+                Debug.Log("[KingdomOfCloud] MCP bridge connected via HTTP 8765 (Unity 6000.6.5f1).");
             }
             catch (Exception ex)
             {

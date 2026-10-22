@@ -14,7 +14,7 @@ alwaysApply: true
 
 ## 编辑器与平台
 
-- 本工程编辑器固定 **Unity 2022.3.62f3c1**；MCP 只连该版本
+- 本工程编辑器固定 **Unity 6000.6.5f1**；MCP 只连该版本
 - 不擅自升级 Unity / URP / 输入系统大版本；需升级先写记忆并征得同意
 - 输入：当前为旧 Input Manager；未要求时不整包迁移到新 Input System
 
