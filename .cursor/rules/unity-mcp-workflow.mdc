@@ -5,9 +5,9 @@ alwaysApply: true
 
 # Unity 场景 / 预制体
 
-- 本工程编辑器固定为 **Unity 6000.6.4f1**（`D:\Unity\6000.6.4f1`）；MCP 只连这个版本，不用 2022 LTS / 团结引擎。
+- 本工程编辑器固定为 **Unity 6000.6.4f1**（`<UNITY:6000.6.4f1>`）；MCP 只连这个版本，不用 2022 LTS / 团结引擎。
 - MCP：`http://127.0.0.1:8765/mcp`（配置 `.cursor/mcp.json`）。
 - 场景搭建、预制体、Hierarchy、组件挂接：先用 Unity MCP 在编辑器里直接做。
 - MCP 不可用或失败：给出逐步手动操作（菜单路径、物体名、Inspector 字段、保存路径），不要含糊带过。
 - 用户没要求时，不要写 `[MenuItem]`、EditorWindow、菜单栏一键工具来完成上述工作。
-- 规格与拆解只写在 `E:\Unity Development\Project\Kingdom Of Cloud\`；运行时代码和资源放 `Assets/_Game/`。
+- 规格与拆解只写在 `<HUB>/Project/Kingdom Of Cloud/`；运行时代码和资源放 `Assets/_Game/`。

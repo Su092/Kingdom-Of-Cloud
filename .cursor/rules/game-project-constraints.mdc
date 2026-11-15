@@ -5,9 +5,17 @@ alwaysApply: true
 
 # 游戏项目约束 — Kingdom Of Cloud
 
+| 项 | 值 |
+|----|-----|
+| 枢纽 | `<HUB>/Project/Kingdom Of Cloud/` |
+| 工程根 | `<GAME:Kingdom Of Cloud>` |
+| 编辑器 | Unity **6000.6.4f1**（`<UNITY:6000.6.4f1>`） |
+
+真实盘符只在 `<HUB>/machine/profile.local.json`；本文件不写。
+
 ## 工作区隔离
 
-- 本工程对应枢纽：`E:\Unity Development\Project\Kingdom Of Cloud\`
+- 本工程对应枢纽：`<HUB>/Project/Kingdom Of Cloud/`
 - 只改本工程与上述枢纽；禁止改其它 `Project/<游戏>/` 或其它 Unity 工程
 
 ## 目录与归属
@@ -15,10 +23,11 @@ alwaysApply: true
 - 运行时脚本 / 资源 / 场景 / 预制体 → `Assets/_Game/`
 - 项目文档 / 拆解 / 长期规范 / 进度 → 枢纽 `docs/` `breakdown/` `control/` `memory/`
 - **禁止**在本工程根下再建过程文档目录（如旧 `Cursor Work Space/`）
+- 未处理的原料（AI 原图 / 参考图 / 预览渲染）→ 工程根 `_Inbox/`（不入库）
 
 ## 编辑器与平台
 
-- 本工程编辑器固定 **Unity 6000.6.4f1**（`D:\Unity\6000.6.4f1`）；MCP 只连该版本
+- 本工程编辑器固定 **Unity 6000.6.4f1**（`<UNITY:6000.6.4f1>`）；MCP 只连该版本
 - 不擅自升级 Unity / URP / 输入系统大版本；需升级先更新枢纽 `memory/CURRENT.md` 并征得同意
 - 输入：当前为旧 Input Manager；未要求时不整包迁移到新 Input System
 
