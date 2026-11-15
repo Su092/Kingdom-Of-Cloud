@@ -69,5 +69,3 @@ crashlytics-build.properties
 Cursor Work Space/logs/
 Cursor Work Space/vendor/
 
-# ---- 未处理资产暂存区（原料，不入库；见 _Inbox/README.md）----
-/_Inbox/
